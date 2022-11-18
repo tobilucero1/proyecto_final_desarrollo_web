@@ -1,0 +1,18 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;500&display=swap');
+
+/* MISC */
+@import './misc/variables';
+@import './misc/normalize';
+
+// PARTIALS
+@import './patials/header';
+@import './patials/footer';
+
+// PAGES
+@import './pages/index';
+@import './pages/contacto';
+@import './pages/nosotros';
+@import './pages/propuesta_informativa';
+@import './pages/proyectos';
+

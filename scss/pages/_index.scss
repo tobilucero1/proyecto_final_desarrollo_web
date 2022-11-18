@@ -1,0 +1,258 @@
+#home_page{
+    margin: 0;
+    padding: 25px 30px;
+    font-size: var(--text-lg);
+    font-family: 'Merriweather', sans-serif;
+    font-weight: normal;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #f7f5e7;
+    background-image: 
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url(../images/https___hypebeast.com_image_2020_06_civilist-berlin-summer-2020-collection-lookbook-0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 50px 0px;
+      }
+}
+
+
+.categorias-1 {
+    display: grid;
+     grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 1280px;
+    margin:auto;
+
+    a { 
+        position: relative;
+        display: block;
+    }
+
+    img {
+        width: 100%;
+    }
+
+
+    .texto {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+    
+        h2 {
+            font-size: 1.7em;
+            font-weight: 600;
+            margin: 0;
+            line-height: 1;
+        }
+    }
+}
+
+
+.categorias-1 img:hover {
+    filter: brightness(1.05);
+}
+
+.categorias-2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    max-width: 1280px;
+    margin: auto;
+
+
+    a { 
+        position: relative;
+        display: block;
+    }
+
+
+    img {
+        width: 100%;
+    }
+
+    .texto {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.5rem;
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            padding: 7px 15px;
+        }
+    }
+}
+.categorias-2 img:hover {
+    filter: brightness(1.05);
+}
+
+
+
+
+
+#patinetas{
+    background-color: rgb(245, 245, 245);
+    color: white;
+    text-align: center;
+
+    .container{
+        padding: 10px 12px;
+    }
+    
+
+    h2{
+        margin-top: 0;
+        font-size: 3.5em;
+        color: #000000;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+
+
+    .carta{
+        background-position: center center;
+        background-size: cover;
+        padding: 150px 0;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+}
+        
+.carta:first-child{
+            background-image: 
+            linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            , url(../images/skate2.webp);
+        }
+
+.carta:nth-child(2){
+            background-image: 
+            linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            , url(../images/crusier2.webp);
+        }
+
+
+.carta:nth-child(3){
+            background-image: 
+            linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            , url(../images/longboard2.webp);
+    }
+
+.parrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: grey;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+
+@media (max-width: 640px) {
+   
+    .categorias-1 { 
+        display: block;
+
+        .texto {
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .categorias-2 {
+        display: block;
+
+        .texto {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+@media (min-width: 720px) {
+    header{
+        .container{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+    }
+
+
+    #patinetas{
+        .patinetas_2{
+            display: flex;
+            justify-content: center;
+        }
+
+        h3{
+            margin-top: 0;
+        }
+
+        .carta{
+            padding: 50px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/* NORMALIZE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5% ;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family:'Roboto', sans-serif ;
+    font-size: var(--text-sm);
+    color: var(--secondary);
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+h1{
+    font-size: var(--text-xl);
+    font-family: 'Merriweather', sans-serif;
+}
+h2{
+    font-size: var(--text-lg);
+    font-family: 'Merriweather', sans-serif;
+}
+h3{
+    font-size: var(--text-md);
+    font-family: 'Merriweather', sans-serif;
+}
+p{
+    font-size: var(--text-sm);
+    font-family: 'Merriweather', sans-serif;
+}
+ul{
+    list-style: none;
+}
+span{
+    font-size: 0.5em;
+}
+
+button{
+    font-size: 1.25em;
+    padding: 10px 30px;
+    color: white;
+    background: none;
+    border: none;
+}

@@ -1,4 +1,4 @@
-/*IMPORTS*/
+/* IMPORTS*/ 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;500&display=swap');
 /* VARIABLES */
 :root{
@@ -25,7 +25,7 @@
     --sp-sm: 1.6rem;
     --sp-xs: 0.8rem;
 
-}
+}  
 
 
 

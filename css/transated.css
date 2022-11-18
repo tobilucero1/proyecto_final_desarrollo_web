@@ -1,0 +1,281 @@
+/*IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;500&display=swap");
+/* MISC */
+/* VARIABLES */
+:root {
+  /* Palettes */
+  --primary: #FCF7FF;
+  --secondary: #000000;
+  --accent: #f7f5e7;
+  --ligth: #934439;
+  /* Font sizes*/
+  --text-xxl: 4.8em ;
+  --text-xl: 3.6em;
+  --text-lg: 3.2em;
+  --text-md: 2.2em;
+  --text-sm: 1.6em;
+  --text-xs: 1.2em;
+  /* Spacing*/
+  --sp-xxl: 12rem ;
+  --sp-xl: 8rem;
+  --sp-lg: 5rem;
+  --sp-md: 3.2rem;
+  --sp-sm: 1.6rem;
+  --sp-xs: 0.8rem; }
+
+/* NORMALIZE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--text-sm);
+  color: var(--secondary);
+  background-color: whitesmoke; }
+
+h1 {
+  font-size: var(--text-xl);
+  font-family: 'Merriweather', sans-serif; }
+
+h2 {
+  font-size: var(--text-lg);
+  font-family: 'Merriweather', sans-serif; }
+
+h3 {
+  font-size: var(--text-md);
+  font-family: 'Merriweather', sans-serif; }
+
+p {
+  font-size: var(--text-sm);
+  font-family: 'Merriweather', sans-serif; }
+
+ul {
+  list-style: none; }
+
+span {
+  font-size: 0.5em; }
+
+button {
+  font-size: 1.25em;
+  padding: 10px 30px;
+  color: white;
+  background: none;
+  border: none; }
+
+header {
+  background-color: whitesmoke; }
+  header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-size: var(--text-lg);
+    font-family: 'Merriweather', sans-serif; }
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px; }
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000; }
+
+header a:hover {
+  color: gray; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #f7f5e7;
+  padding: 25px; }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .container a {
+      text-decoration: none;
+      color: #f7f5e7; }
+    footer .container a:hover {
+      color: gray; }
+    footer .container button {
+      transform: translate(-50%, 0%);
+      color: white;
+      font-size: 2.5rem;
+      background: #000000;
+      border-radius: 15px;
+      padding: 10px 10px; }
+    footer .container button:hover {
+      background-color: white;
+      color: #000000; }
+
+#home_page {
+  margin: 0;
+  padding: 25px 30px;
+  font-size: var(--text-lg);
+  font-family: 'Merriweather', sans-serif;
+  font-weight: normal; }
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: #f7f5e7;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/https___hypebeast.com_image_2020_06_civilist-berlin-summer-2020-collection-lookbook-0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.videowrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; }
+  .videowrapper iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 50px 0px; }
+
+.categorias-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1280px;
+  margin: auto; }
+  .categorias-1 a {
+    position: relative;
+    display: block; }
+  .categorias-1 img {
+    width: 100%; }
+  .categorias-1 .texto {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem; }
+    .categorias-1 .texto h2 {
+      font-size: 1.7em;
+      font-weight: 600;
+      margin: 0;
+      line-height: 1; }
+
+.categorias-1 img:hover {
+  filter: brightness(1.05); }
+
+.categorias-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1280px;
+  margin: auto; }
+  .categorias-2 a {
+    position: relative;
+    display: block; }
+  .categorias-2 img {
+    width: 100%; }
+  .categorias-2 .texto {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: black;
+    text-align: center;
+    font-size: 1.5rem; }
+    .categorias-2 .texto h2 {
+      font-size: 1.8em;
+      font-weight: 600;
+      line-height: 1; }
+    .categorias-2 .texto p {
+      color: black;
+      padding: 7px 15px; }
+
+.categorias-2 img:hover {
+  filter: brightness(1.05); }
+
+#patinetas {
+  background-color: whitesmoke;
+  color: white;
+  text-align: center; }
+  #patinetas .container {
+    padding: 10px 12px; }
+  #patinetas h2 {
+    margin-top: 0;
+    font-size: 3.5em;
+    color: #000000;
+    padding-top: 25px;
+    padding-bottom: 10px; }
+  #patinetas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 150px 0;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
+
+.carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/skate2.webp); }
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/crusier2.webp); }
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/longboard2.webp); }
+
+.parrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: grey;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 10px; }
+
+@media (max-width: 640px) {
+  .categorias-1 {
+    display: block; }
+    .categorias-1 .texto {
+      font-size: 1.5rem; }
+  .categorias-2 {
+    display: block; }
+    .categorias-2 .texto {
+      font-size: 1.5rem; } }
+
+@media (min-width: 720px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between; }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px; }
+  #patinetas .patinetas_2 {
+    display: flex;
+    justify-content: center; }
+  #patinetas h3 {
+    margin-top: 0; }
+  #patinetas .carta {
+    padding: 50px; } }
